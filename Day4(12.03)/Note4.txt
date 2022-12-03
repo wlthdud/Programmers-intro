@@ -1,0 +1,8 @@
+ 🐰 [배열의 평균값]
+❍ 소수점 자리 지정
+ - num.toFixed(3);
+ - 12.345
+
+❍ reduce()
+ - numbers = [1, 2, 3, 4, 5];
+ - const sum1 = numbers.reduce((accumulator, currentNumber) => accumulator + currentNumber);

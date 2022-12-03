@@ -23,6 +23,7 @@ n명이 주문한 피자를 남기지 않고 모두 같은 수의 피자 조각�
 
 
 function solution(n) {
+    ExceptionOfNums(n);
     let pizza = 6;
 
     while(pizza % n != 0){

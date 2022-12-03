@@ -19,6 +19,7 @@
 
 
 function solution(n) {
+    ExceptionOfNums(n);
     var answer = [];
 
     for(let i = 0; i <= n; i++){

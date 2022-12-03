@@ -6,3 +6,7 @@
  array.sort(function(a,b){
      return a - b;
  });
+
+ 🐰 [최빈값 구하기]
+❍ map
+ - const modeMap = new Map();

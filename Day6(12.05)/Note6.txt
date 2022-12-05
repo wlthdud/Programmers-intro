@@ -1,4 +1,4 @@
-  🐰 [문자열 뒤집기]
+🐰 [문자열 뒤집기]
 ❍ split('')
  - 문자열을 배열로 변환
  - string.split(seperator, limit)
@@ -10,3 +10,23 @@
 ❍ join()
  - 배열을 문자열로 변환
  - arr.join(seperator)
+
+🐰 [직각삼각형 출력하기]
+❍ JS 입력 받기
+const readline = require('readline');
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
+let input = [];
+
+rl.on('line', function (line) {
+    input = line.split(' ');
+}).on('close', function () {
+    console.log(Number(input[0]));
+});
+
+❍ require()
+ - Node.JS 에서는 require 메서드를 통해 외부 모듈을 가져올 수 있음
+ - const readline = require('readline');

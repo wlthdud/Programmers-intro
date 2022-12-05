@@ -13,8 +13,8 @@
 
 🐰 [직각삼각형 출력하기]
 ❍ JS 입력 받기
-const readline = require('readline');
-const rl = readline.createInterface({
+const readline = require('readline');   //Node.JS 에서는 require 메서드를 통해 외부 모듈을 가져올 수 있음
+const rl = readline.createInterface({   //readline.Interface 인스턴스를 생성
     input: process.stdin,
     output: process.stdout
 });
@@ -27,6 +27,10 @@ rl.on('line', function (line) {
     console.log(Number(input[0]));
 });
 
-❍ require()
- - Node.JS 에서는 require 메서드를 통해 외부 모듈을 가져올 수 있음
- - const readline = require('readline');
+ - rl.on() : readline.Interface 인스턴스(rl)에서 .on()메소드로 Interface가 내장한 이벤트들을 실행
+
+❍ Number()
+ - 문자열을 숫자로 변환
+
+❍ repeat(count)
+ - 문자열을 주어진 횟수만큼 반복해 붙인 새로운 문자열 반환

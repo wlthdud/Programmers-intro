@@ -4,3 +4,12 @@
  - begin : 잘라낼 배열의 시작 index
  - end : 잘라낼 배열의 종료 index , end index는 배열에 포함되지 않음
  - 음수면 배열의 끝에서부터의 길이
+
+🐰 [외계행성의 나이]
+❍ String()
+ - 숫자 -> 문자열
+ - String(num)
+
+ ❍ 아스키코드 변환
+ - 문자열.charCodeAt(문자열 자릿수);  : 문자열 -> 아스키코드
+ - String.fromCharCode(아스키코드 값);  : 아스키코드 -> 문자열 

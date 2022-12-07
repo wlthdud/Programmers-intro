@@ -36,5 +36,3 @@ function ExceptionOfNums(n){
         throw new Error("n 길이 오류");
     } 
 }
-
-console.log(solution(100));

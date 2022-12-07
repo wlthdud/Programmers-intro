@@ -13,3 +13,11 @@
  ❍ 아스키코드 변환
  - 문자열.charCodeAt(문자열 자릿수);  : 문자열 -> 아스키코드
  - String.fromCharCode(아스키코드 값);  : 아스키코드 -> 문자열 
+
+🐰 [진료순서 정하기]
+❍ Sort()
+ - 원본 배열이 변경되는게 싫으면 [...배열].sort()
+
+❍ Map()
+ - newMap.set('a', 1)
+ - newMap.get('a'); //1

@@ -25,13 +25,14 @@ age가 100이므로 "baa"를 return합니다.
 //////////
 */
 
-//a=97;
+
 function solution(age) {
     ExceptionOfNums(age);
     let answer = '';
+    let str = String(age);
 
-    for(let i = 0; i < arguments.length; i++){
-        answer += age.charCodeAt(i) - 96;
+    for(let i = 0; i < str.length; i++){
+        answer += String.fromCharCode(parseInt(str[i]) + 97);
     }
     
     return answer;
@@ -39,19 +40,10 @@ function solution(age) {
 
 //예외처리
 function ExceptionOfNums(age){
-
     if(!Number.isInteger(age)){
         throw new Error("age integer ERROR");
     }
     if(age > 1000){
         throw new Error("age ERROR");
     } 
-    let lowerAge = age.toLowerCase();
-
-    if(age != lowerAge){
-        throw new Error("age lower ERROR");
-    }
-    
 }
-
-console.log(solution(23));

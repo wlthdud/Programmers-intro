@@ -1,0 +1,20 @@
+🐰 [모스부호(1)]
+❍ 객체
+ - const morseObj = { };
+
+🐰 [가위 바위 보]
+❍ 객체
+ - const rspObj = {
+        2 : 0,
+        0 : 5,
+        5 : 2
+    };
+
+🐰 [구슬을 나누는 경우의 수]
+❍ factorial
+ - for(let i = 1; i <= n; i++){
+        result *= BigInt(i);  
+    }
+    return result;
+
+ - BigInt : 최대치인 2^53 - 1보다 큰 정수를 표현할 수 있는 내장 객체

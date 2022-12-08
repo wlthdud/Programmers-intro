@@ -21,7 +21,6 @@ rsp는 숫자 0, 2, 5로 이루어져 있습니다.
 */
 
 
-
 function solution(rsp) {
     ExceptionOfNums(rsp);  
     let answer = '';
@@ -37,8 +36,6 @@ function solution(rsp) {
 
     return answer;
 }
-
-
 
 //예외처리
 function ExceptionOfNums(rsp){

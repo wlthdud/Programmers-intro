@@ -23,10 +23,10 @@ function solution(numbers) {
     ExceptionOfNums(numbers);
 
     numbers.sort(function (a, b) {
-        return a - b;
+        return b - a;
     });
 
-    return numbers[numbers.length - 1] * numbers[numbers.length - 2];
+    return numbers[0] * numbers[1];
 }
 
 //예외처리

@@ -39,14 +39,12 @@ function solution(numbers, k) {
     let getIndex = 0; //받는 사람 인덱스
     let throwIndex = 0; //던지는 사람 인덱스
 
-    for(let i = 0; i < k; i++){
-        
+    for(let i = 0; i < k; i++){ 
         getIndex += 2;
 
         if(getIndex >= numbers.length){
             getIndex -= numbers.length;
         }
-        console.log(i, getIndex);
     }
 
     if((getIndex - 2) >= 0){

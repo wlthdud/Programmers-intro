@@ -42,9 +42,6 @@ function ExceptionOfNums(my_string){
     if(my_string.length < 1 || my_string.length > 100){
         throw new Error("my_string ERROR");
     }
-    if(my_string.match(/[a-z]/g).length == 0){
-        throw new Error("문자열이 포함되어있지 않습니다. ERROR");
-    }
 }
 
 console.log(solution("hi12392"));

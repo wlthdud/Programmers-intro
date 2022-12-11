@@ -1,0 +1,4 @@
+🐰 [모음 제거]
+❍ remove()
+ - 문자열 특정 문자 제거
+ -  https://codechacha.com/ko/javascript-replace-in-string/

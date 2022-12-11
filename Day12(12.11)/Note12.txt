@@ -2,3 +2,7 @@
 ❍ remove()
  - 문자열 특정 문자 제거
  -  https://codechacha.com/ko/javascript-replace-in-string/
+
+🐰 [문자열 정렬하기(1)]
+- 답을 주석처럼 늘여썼을 땐 배열안에 원소들이 ""가 붙어서 출력됨
+- [...numString] 부분 때문일지도..?   

@@ -33,7 +33,6 @@ function solution(strlist) {
     return answer;
 }
 
-
 function ExceptionOfNums(strlist){
     for(let i = 0; i < strlist.length; i++){
         if(strlist[i].length < 1 || strlist[i].length > 100){

@@ -24,12 +24,13 @@ num1 ≠ num2
 
 function solution(my_string, num1, num2) { 
     ExceptionOfNums(my_string, num1, num2);
-    let answer = '';
-    let my_array = [...my_string];
 
+    const my_array = [...my_string];
     
-    
-    return answer;
+    my_array.splice(num1, 1, my_string[num2]);
+    my_array.splice(num2, 1, my_string[num1]);
+
+    return my_array.join('');
 }
 
 function ExceptionOfNums(my_string, num1, num2){
@@ -47,4 +48,4 @@ function ExceptionOfNums(my_string, num1, num2){
     }
 }
 
-console.log(solution("onetwothreefourfivesixseveneightnine"));
+console.log(solution("hello", 1, 2));

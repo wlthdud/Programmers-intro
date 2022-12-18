@@ -23,7 +23,7 @@ function solution(n) {
     let answer = 0;
 
     let str = String(n);
-    console.log(str[0]);
+
     for(let i = 0; i < str.length; i++){
         answer += Number(str[i]);
     }

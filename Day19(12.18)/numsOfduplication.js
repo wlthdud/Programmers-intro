@@ -24,8 +24,6 @@ function solution(array, n) {
     ExceptionOfNums(array, n);
 
     const answer = array.filter(num => num == n);
-    console.log(answer);
-    console.log(answer.length);
     
     return answer.length;
 }

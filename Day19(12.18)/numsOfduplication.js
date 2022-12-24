@@ -22,13 +22,12 @@
 
 function solution(array, n) { 
     ExceptionOfNums(array, n);
-    let answer = 0;
 
-    answer = array.filter(num => num == 1);
+    const answer = array.filter(num => num == n);
     console.log(answer);
     console.log(answer.length);
     
-    return answer;
+    return answer.length;
 }
 
 function ExceptionOfNums(array, n){
@@ -45,4 +44,4 @@ function ExceptionOfNums(array, n){
     }
 }
 
-console.log(solution("abc1Addfggg4556b", 6));
+console.log(solution([1, 1, 2, 3, 4, 5]	, 1));

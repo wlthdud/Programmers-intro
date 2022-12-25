@@ -38,30 +38,6 @@ function solution(keyinput, board) {
     let upDn = 0;
     let leRgt = 0;
 
-    // for(let i = 0; i < keyinput.length; i++){
-    //     if(keyinput[i] == 'up'){ //[0,1]
-    //         upDn++;
-    //         if(upDn > parseInt(board[1] / 2)){
-    //             upDn--;
-    //         }
-    //     }else if(keyinput[i] == 'down'){ //[0,-1]
-    //         upDn--;
-    //         if(upDn < parseInt(board[1] / 2) * -1){
-    //             upDn++;
-    //         }
-    //     }else if(keyinput[i] == 'left'){ //[-1,0]
-    //         leRgt--;
-    //         if(leRgt < parseInt(board[0] / 2) * -1){
-    //             leRgt++;
-    //         }
-    //     }else if(keyinput[i] == 'right'){ //[1,0]
-    //         leRgt++;
-    //         if(leRgt > parseInt(board[0] / 2)){
-    //             leRgt--;
-    //         }
-    //     }
-    // }
-
     for(let i = 0; i < keyinput.length; i++){
         switch (keyinput[i]) {
             case 'up':

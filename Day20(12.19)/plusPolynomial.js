@@ -65,7 +65,7 @@ function solution(polynomial) {
         if(num == 0){
             answer = 0;
         }else{
-            answer = num;
+            answer = num.toString();
         }
     }else if(x == 1){
         if(num == 0){
@@ -75,9 +75,9 @@ function solution(polynomial) {
         }
     }else{
         if(num == 0){
-            answer = x + 'x'
+            answer = x.toString() + 'x'
         }else{
-            answer = x + 'x' + ' + ' + num;
+            answer = x.toString() + 'x' + ' + ' + num.toString();
         }
     }
 

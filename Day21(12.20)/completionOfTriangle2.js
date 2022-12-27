@@ -42,8 +42,6 @@ function solution(sides) {
         return a - b;
     });
 
-    console.log(sides);
-
     //배열의 최댓값 : 배열 원소
     for(let element = sides[1] - sides[0] + 1; element <= sides[1]; element++){
         console.log(element);

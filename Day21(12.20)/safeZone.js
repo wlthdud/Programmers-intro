@@ -30,7 +30,45 @@ function solution(board) {
     ExceptionOfNums(board);
     let answer = 0;
 
-    
+    for(let i = 0; i < board.length; i++){
+        for(let j = 0; j < board[i].length; j++){
+            if(board[i][j] == 1){
+                if(i != 0 && board[i-1][j] != 1){ //맨 윗줄이 아닌 경우
+                    board[i-1][j] = 2;
+                }
+                if(i != board.length - 1 && board[i+1][j] != 1){ //맨 아랫줄이 아닌 경우
+                    board[i+1][j] = 2;
+                }
+                if(j != 0 && board[i][j-1] != 1){ //맨 왼쪽줄이 아닌 경우
+                    board[i][j-1] = 2;
+                }
+                if(j != board[i].length - 1 && board[i][j+1] != 1){ //맨 오른쪽줄이 아닌 경우
+                    board[i][j+1] = 2;
+                }
+                if(i != 0 && j != 0 && board[i-1][j-1] != 1){ //대각선 왼쪽 위
+                    board[i-1][j-1] = 2;
+                }
+                if(i != board.length - 1 && j != 0 && board[i+1][j-1] != 1){ //대각선 왼쪽 아래
+                    board[i+1][j-1] = 2;
+                }
+                if(i != 0 && j != board[i].length - 1 && board[i-1][j+1] != 1){ //대각선 오른쪽 위
+                    board[i-1][j+1] = 2;
+                }
+                if(i != board.length - 1 && j!= board[i].length - 1 && board[i+1][j+1] != 1){ //대각선 오른쪽 아래
+                    board[i+1][j+1] = 2;
+                }
+            }
+        }
+        
+    }
+
+    for(let i = 0; i < board.length; i++){
+        for(let j = 0; j < board[i].length; j++){
+            if(board[i][j] == 0){
+                answer++;
+            }
+        }
+    }
 
     return answer;
 }

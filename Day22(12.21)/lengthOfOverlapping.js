@@ -33,17 +33,15 @@ lines의 원소는 [a, b] 형태이며, a, b는 각각 선분의 양 끝점 입�
 */
 
 
-function solution(lines) { 
+function solution(lines) {
     ExceptionOfNums(lines);
-    let answer = 0;
+    let lineArr = new Array(200).fill(0);
 
-    for(let i = 0; i < lines.length; i++){
-        for(let j = 0; j < lines[i].length; j++){
-            
-        }
-    }
-    
-    return answer;
+    lines.forEach(([a, b]) => {
+        for(; a < b; a++) lineArr[a+100]++;
+    });
+
+    return lineArr.reduce((a, c) =>  c > 1 ? a + 1 : a, 0);
 }
 
 function ExceptionOfNums(lines){

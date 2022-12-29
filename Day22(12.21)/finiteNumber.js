@@ -35,10 +35,45 @@ a, b는 정수
 
 function solution(a, b) { 
     ExceptionOfNums(a, b);
-    let answer = 0;
+    let answer = 1;
 
+    let deno = parseInt(b / getGCD(a,b));
+
+    for(let i = 0; i < primeFactors(deno).length; i++){
+        if(primeFactors(deno)[i] != 2 && primeFactors(deno)[i] != 5){
+            answer = 2;
+        }
+    }
     
     return answer;
+}
+
+function getGCD(num1, num2){ //최대공약수 구하기
+    let gcd = 1;
+    
+    for(let i=2; i<=Math.min(num1, num2); i++){
+        if(num1 % i === 0 && num2 % i === 0){
+            gcd = i;
+        }
+    }
+    
+    return gcd;
+}
+
+function primeFactors(n){
+    let result = [];
+    let idx = 2;
+
+    while(n >= 2){
+        if(n % idx == 0){
+            result.push(idx);
+            n = parseInt(n / idx);
+        }else{
+            idx++;
+        }
+    }
+
+    return [...new Set(result)];
 }
 
 function ExceptionOfNums(a, b){
@@ -50,4 +85,4 @@ function ExceptionOfNums(a, b){
     }
 }
 
-console.log(solution(15));
+console.log(solution(7,20));

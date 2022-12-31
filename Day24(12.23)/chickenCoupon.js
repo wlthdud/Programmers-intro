@@ -30,21 +30,14 @@ chicken은 정수입니다.
 
 function solution(chicken) {
     ExceptionOfNums(chicken);    
-    let coupon = chicken;
     let service = 0;
-    let used = 0;
+    let coupon = chicken;
 
     while(coupon >= 10){
-        service += parseInt(coupon/10); 
-        used = parseInt(coupon/10) * 10;
-        console.log('service' + service);
-        console.log('used' + used);
-        coupon -= used;
-        coupon += parseInt(coupon/10);
-        console.log('coupon' + coupon);
-        
+        service = service + parseInt(coupon/10);
+        coupon = parseInt(coupon/10) + coupon%10;
     }
-
+   
     return service;
 }
 

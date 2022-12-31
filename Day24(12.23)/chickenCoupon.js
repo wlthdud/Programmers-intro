@@ -29,9 +29,23 @@ chicken은 정수입니다.
 
 
 function solution(chicken) {
-    ExceptionOfNums(chicken);
-    
-    return answer;
+    ExceptionOfNums(chicken);    
+    let coupon = chicken;
+    let service = 0;
+    let used = 0;
+
+    while(coupon >= 10){
+        service += parseInt(coupon/10); 
+        used = parseInt(coupon/10) * 10;
+        console.log('service' + service);
+        console.log('used' + used);
+        coupon -= used;
+        coupon += parseInt(coupon/10);
+        console.log('coupon' + coupon);
+        
+    }
+
+    return service;
 }
 
 function ExceptionOfNums(chicken){
@@ -40,4 +54,4 @@ function ExceptionOfNums(chicken){
     }
 }
 
-console.log(solution([1, 2, 3, 4, 5, 6], 4));
+console.log(solution(1081));

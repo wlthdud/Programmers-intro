@@ -30,7 +30,6 @@ function solution(i, j, k) {
     for(let num = i; num <= j; num++){
         arr.push(num);
     }
-    console.log(arr);
     
     return arr.join('').split('').filter(a => a == k).length;
 }
